@@ -11,6 +11,7 @@ body {
     margin: 0 auto;
     padding: 10px;
     vertical-align: middle;
+
     
     
 }
@@ -40,6 +41,7 @@ h1 {
     vertical-align: middle;
     margin: 5px auto;
     padding: 5px;
+
 }
 
 
@@ -51,42 +53,50 @@ tr:nth-child(1) {
     background-color: lightgrey;
 }
 
-th,
-td {
+th, td {
     border: 1px solid black;
     font-size: 110%;
     height: 30px;
     padding: 10px;
 }
 
+@media (max-width: 414px){
+    th, td{
+        display: flex;
+        flex-direction: column;
+        height: 45px;
+    }
+}
+
+
 .ideal {
     background-color: lightgreen;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 .leve {
     background-color: rgb(255, 255, 115);
     font-weight: bold;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 .moderado {
     background-color: rgb(255, 146, 146);
     font-weight: bold;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 .grave {
     background-color: rgb(241, 98, 98);
     font-weight: bold;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 .gravissimo {
     background-color: red;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 form {
