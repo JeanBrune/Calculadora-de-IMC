@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(21, 6, 54);
+}
+
+.container {
+    background-color: thistle;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 65%;
+    }
+}
+
+    h1{
+        text-align: center;
+        font-size: 200%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tabela_IMC{
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        vertical-align: middle;
+        margin: 5px auto;
+        padding: 5px;
+    }
+    
+    /* @media (min-width: 768px){
+        .tabela_IMC{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        
+    } */
+
+    table{
+        background-color: whitesmoke;
+        width: 600px;
+    }
+
+    tr:nth-child(1){
+        background-color: lightgrey;
+    }
+
+    th, td {
+        border: 1px solid black;
+        font-size: 110%;
+        height: 30px;
+        padding: 10px;
+
+    }
+
+    .ideal{
+        background-color: lightgreen;
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    .leve{
+        background-color: rgb(255, 255, 115);
+        font-weight: bold;
+        font-size: 150%;
+
+    }
+
+    
+    .moderado{
+        background-color: rgb(255, 146, 146);
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    .grave{
+        background-color: rgb(241, 98, 98);
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    .gravissimo{
+        background-color: red;
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    form{
+        margin: 20px auto;
+        padding: 5px;
+        font-size: 120%;
+    }
+
+    .peso, .altura{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        
+    }
+    label, p{
+        font-weight: bold;
+        padding: 5px;
+        margin: 5px;
+        
+    }
+
+    input{
+        font-size: 110%;
+    }
+
+    button{
+        font-size: 150%;
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        margin: 10px auto;
+        justify-content: flex-end;
+    }
+
+    #resultado p{
+        font-size: 200%;
+        font-weight: bold;
+        padding: 20px;
+        height: 20px;
+        text-align: center;
+    }
+
+    /* remover setas do input field*/
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

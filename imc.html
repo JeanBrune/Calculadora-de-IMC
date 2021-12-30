@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/imc.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Calcule seu IMC</h1>
+        <section class="tabela">
+
+            <table class="tabela_IMC">
+                <tr>
+                    <th>INDICE DE MASSA CORPORAL (IMC)</th>
+                    <th>Resultado</th>
+                </tr>
+
+                <tr id="magreza_III">
+                    <th>Abaixo de 16</th>
+                    <td>Magreza em grau III</td>
+                </tr>
+
+                <tr id="magreza_II">
+                    <th>Entre 16 e 16.9</th>
+                    <td>Magreza em grau II</td>
+                </tr>
+
+                <tr id="magreza_I">
+                    <th>Entre 17 e 18.4</th>
+                    <td>Magreza em grau I</td>
+                </tr>
+
+                <tr id="ideal">
+                    <th>Entre 18.5 e 24.9</th>
+                    <td>Faixa de peso ideal</td>
+                </tr>
+
+                <tr id="obesidade_0">
+                    <th>Entre 25 e 29.9</th>
+                    <td>Acima do peso</td>
+                </tr>
+
+                <tr id="obesidade_I">
+                    <th>Entre 30 a 34.9</th>
+                    <td>Obesidade de grau I</td>
+                </tr>
+
+                <tr id="obesidade_II">
+                    <th>Entre 35 e 39.9</th>
+                    <td>Obesidade de grau II</td>
+                </tr>
+
+                <tr id="obesidade_III">
+                    <th>A partir de 40</th>
+                    <td>Obesidade de grau III <br>
+                        (obesidade mórbida)</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="resultado">
+            <p></p>
+        </section>
+
+        <section class="formulario">
+            <form id="formulario">
+                <div class="peso">
+                    <label for="peso">Insira seu peso atual:</label>
+                    <p>
+                        <input type="number" id="peso" name="peso" placeholder="75" min="1" max="700"
+                            oninput="converter(min,max)" onclick="apagar(this.id)" required>Kg
+                    </p>
+                </div>
+                <div class="altura">
+                    <label for="altura">Insira sua altura atual:</label>
+                    <p>
+                        <input type="number" id="altura" name="altura" placeholder="1.75" min="0.5" max="2.7"
+                            oninput="converter(min,max)" onclick="apagar(this.id)" required>m
+                    </p>
+                </div>
+                <button onclick="calcular_IMC()">Calcular IMC</button>
+            </form>
+        </section>
+
+
+
+        <script src="./js/imc.js"></script>
+</body>
+</body>
+
+</html>
