@@ -20,9 +20,10 @@ body {
         width: 80%;
     }
 }
+
 @media (max-width: 768px){
     .container{
-        width: fit-content;
+        width: 100%;
         min-width: 300px;
     }
 }
@@ -41,12 +42,18 @@ h1 {
     vertical-align: middle;
     margin: 5px auto;
     padding: 5px;
-
 }
 
 
 table{
     background-color: whitesmoke;
+    width: 100%;
+    }
+
+@media (min-width: 630px){
+    table{
+        width: 600px;
+    }
 }
 
 tr:nth-child(1) {
@@ -60,6 +67,7 @@ th, td {
     padding: 10px;
 }
 
+
 @media (max-width: 414px){
     th, td{
         display: flex;
@@ -68,7 +76,11 @@ th, td {
     }
 }
 
-
+@media (min-width: 415px){
+    td{
+        width: 60%;
+    }
+}
 .ideal {
     background-color: lightgreen;
     font-weight: bold;
@@ -96,7 +108,9 @@ th, td {
 .gravissimo {
     background-color: red;
     font-weight: bold;
-    font-size: 140%;
+    font-size: 120%;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 form {
